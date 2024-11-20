@@ -1,0 +1,767 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+body {
+	margin:0px;
+	padding:0px;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	line-height:1.5em; 
+	background-color: #fff;
+	
+}
+
+a, a:link, a:visited { color: #000000; font-weight: normal; }
+a:hover { color:#CC0000; text-decoration:none; }
+
+p { margin: 0px; padding: 0 0 20px 0; }
+img { border: none; }
+
+h2, h3, h4, h5 { font-weight: normal; font-family: Arial, Helvetica, sans-serif; }
+
+h1 { font-size: 28px; color: #fff; margin: 0 0 20px 0; padding: 5px 0; }
+h2 { font-size: 22px; color: #000; margin: 0 0 20px 0; padding: 0 0 10px 0; border-bottom: 1px dashed #999; font-family: Arial, Helvetica, sans-serif; }
+h2 span { font-weight: bold; }
+h3 { font-size: 21px; color: #333; margin: 0 0 15px 0; padding: 0; text-decoration: none; font-weight: normal; }
+h4 { font-size: 18px; color: #000; margin: 0 0 10px 0; padding: 0; }
+h5 {
+	font-size: 14px;
+	height: 27px;
+	width: 116px;
+	color: #000;
+	margin: 0;
+	padding: 3px 10px 0 10px;
+	text-align: center;
+	background: url(images/h5_bg.png) no-repeat top left;
+}
+h6 { font-size: 12px; margin: 0 0 5px 0; padding: 0;}
+
+blockquote { font-style: italic; }
+cite { font-weight: normal; color: #1d68b6; font-size: 14px; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.margin_r15 { margin-right: 15px; }
+.margin_r30 { margin-right: 30px; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.image_wrapper { padding: 8px; border: 1px solid #000; background: #0f1115; }
+.fl_img { float: left; margin: 3px 30px 15px 0; }
+.fr_img { float: right; margin: 3px 0 15px 15px; }
+
+.button a {
+	clear: both;
+	display: block;
+	width: 119px;
+	height: 33px;
+	padding: 3px 0 0 12px;
+	background: url(images/readmore.png) no-repeat;
+		
+	color: #ccc;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button a:hover {
+	color: #fff;
+}
+
+ul { margin: 20px 10px; padding: 0; list-style:none; }
+ul li { padding-left: 30px; padding-bottom: 3px; margin-bottom: 2px; background: url(images/ul_list.png) no-repeat center left; }
+ul li a { font-weight: normal; text-decoration: none; }
+
+.readmore a {
+	clear: both;
+	display: block;
+	float: right;
+	padding: 0px 0 2px 12px;
+	background: url(images/read_more.png) center left no-repeat;
+
+	color: #2670c3;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* header */
+
+
+
+
+
+/* Header */
+#templatemo_header_wrapper {
+    width: 100%;
+    height: 82px;
+    background-color: #0b2c65;
+    position: fixed; /* Hace que el encabezado se quede fijo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Se asegura de que el encabezado esté por encima de otros elementos */
+}
+
+#templatemo_header {
+    width: 910px;
+    height: 52px;
+    padding: 15px;
+    margin: 0 auto;
+    position: relative; /* Relativa al contenedor para el posicionamiento */
+}
+
+
+/*#templatemo_header_wrapper {
+	width: 100%;
+	height: 82px;
+	background-color: #0b2c65;
+}
+
+#templatemo_header {
+	width: 910px;
+	height: 52px;
+	padding: 15px;
+	margin: 0 auto;
+}*/
+
+/* site title */
+
+
+
+
+/* menu */
+/* Menú fijo */
+
+/* Estilo general del menú */
+#templatemo_menu {
+    float: right;
+    height: 37px;
+    margin-top: 12px;
+}
+
+#templatemo_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li {
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Cambiar a inline-block para que se puedan mostrar los submenús */
+    position: relative; /* Posición relativa para los submenús */
+}
+
+#templatemo_menu ul li a {
+    float: left;
+    display: block;
+    height: 28px;
+    width: 90px;
+    margin-left: 10px;
+    padding: 8px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+    background: url(images/menu_hover.png) no-repeat;
+}
+
+/* Estilo para los submenús */
+#templatemo_menu ul li ul {
+    display: none; /* Los submenús están ocultos por defecto */
+    position: absolute; /* Los submenús se posicionan de forma absoluta */
+    top: 37px; /* Para que el submenú esté justo debajo del elemento */
+    left: 0;
+    background-color: #0b2c65; /* Fondo del submenú */
+    width: 100%;
+    padding: 0;
+}
+
+#templatemo_menu ul li:hover ul {
+    display: block; /* Cuando el usuario pasa el mouse sobre el li, el submenú se muestra */
+}
+
+/* Estilo de los elementos dentro del submenú */
+#templatemo_menu ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+#templatemo_menu ul li ul li a {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Efecto hover para los submenús */
+#templatemo_menu ul li ul li a:hover {
+    background-color: #0a2b59; /* Un tono más oscuro para el hover */
+}
+/*
+#templatemo_menu {
+	float: right;
+	height: 37px;
+	margin-top: 12px;
+}
+
+#templatemo_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	height: 28px;
+	width: 90px;
+	margin-left: 10px;
+	padding: 8px 0 0 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;	
+	outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+	background: url(images/menu_hover.png) no-repeat;
+}*/
+
+/* end of menu */
+
+/* end of header */
+
+/* feature */
+
+#templatemo_feature_wrapper {
+    width: 100%;
+    height: 266px;
+    margin-top: 90px; /* Ajusta este valor para mover hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured {
+    display: flex;
+    gap: 10px; /* Espacio entre banners */
+}
+
+.banner1 {
+    
+		width: 980px;
+		height: 266px;
+	
+	
+}
+/* end of feature */
+
+ 
+
+.footer {
+  background-color: #0b2c65;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #ffffff;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem; /* Ajusta esta propiedad para bajar el contenido */
+  margin-bottom: 1rem; /* Ajusta según prefieras el espacio inferior */
+  color: #ffffff;
+  padding-top: 50px; /* Añade un padding superior si quieres más separación */
+}
+
+.footer .content p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1rem;
+  font-size: 19px;
+  color: #ffffff;
+}
+
+
+footer hr {
+  margin: 2rem 0;
+  border-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+
+
+.banner1{
+    width: 980px;
+	height: 266px;
+}
+
+
+.serva{
+    width: 85px;
+    height: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ubicacion {
+    color: white;
+    text-align: center;
+}
+
+.body3 {
+    padding: 100px 20px;
+     background-color:  #ebeff3 ;
+}
+
+.cajagaleria {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contenedor-img {
+    width: 400px;
+    height: 430px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    cursor: default;
+    background: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    border: 5px outset rgb(0, 0, 50);
+    padding-bottom: 40px;
+}
+
+.contenedor-img img {
+    display: block;
+    width: 100%;
+    height: 470px;
+    transition: all 0.2s linear;
+}
+
+.contenedor-img .mascara,
+.contenedor-img .contenido {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    text-align: center;
+    background: rgba(25, 96, 184, 0.8);
+}
+
+.contenedor-img h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 17px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    margin: 20px 0 0 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.contenedor-img p {
+    font-size: 12px;
+    color: #fff;
+    padding: 10px 20px 10px;
+    text-align: center;
+    transition: all 0.4s linear;
+}
+
+.contenedor-img a.link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #222;
+    color: #fff;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    transition: all 0.4s ease-in-out;
+}
+
+.contenedor-img a.link:hover {
+    box-shadow: 0 0 5px #000;
+}
+
+.ejemplo-1 img {
+    transition: all 0.2s linear;
+}
+
+.ejemplo-1 .mascara {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.ejemplo-1 h2,
+.ejemplo-1 p,
+.ejemplo-1 a.link {
+    opacity: 0;
+    transition: all 0.7s ease-in-out;
+}
+
+.ejemplo-1:hover img {
+    transform: scale(1.1);
+}
+
+.ejemplo-1:hover .mascara {
+    opacity: 1;
+}
+
+.ejemplo-1:hover h2,
+.ejemplo-1:hover p,
+.ejemplo-1:hover a.link {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.ejemplo-2 img {
+    transition: all 0.2s ease-in;
+}
+
+.ejemplo-2 .mascara {
+    width: 300px;
+    height: 300px;
+    padding: 60px;
+    opacity: 1;
+    transform: translate(300px, 200px) rotate(45deg);
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-2 h2 {
+    margin: 20px 40px 0px 40px;
+    transition: all 0.3s ease-in-out;
+}
+
+.ejemplo-2 p,
+.ejemplo-2 a.link {
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-2:hover .mascara {
+    transform: translate(-96px, -120px) rotate(45deg);
+}
+
+.ejemplo-2:hover h2 {
+    transform: translate(0px, 0px);
+    transition-delay: 0.3s;
+}
+
+.ejemplo-2:hover p {
+    transform: translate(0px, 0px);
+    transition-delay: 0.4s;
+}
+
+.ejemplo-2:hover a.link {
+    transform: translate(0px, 0px);
+    transition-delay: 0.5s;
+}
+
+.ejemplo-3 img {
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-3 .mascara {
+    transform: translateX(-300px);
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-3 h2 {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.ejemplo-3 p {
+    color: #fff;
+}
+
+.ejemplo-3:hover .mascara {
+    transform: translateX(0px);
+}
+
+.ejemplo-3:hover img {
+    transform: translateX(300px);
+}
+
+.ejemplo-4 img {
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.ejemplo-4 .mascara {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease-in;
+}
+
+.ejemplo-4:hover .mascara {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    transition-delay: 0.2s;
+}
+
+.ejemplo-5 img {
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.ejemplo-5 .mascara {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease-in;
+}
+
+.ejemplo-5:hover .mascara {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    transition-delay: 0.2s;
+}
+
+.ejemplo-4-1 img {
+    transition: all 0.4s ease-in-out 0.2s;
+}
+
+.ejemplo-4-1 .mascara {
+    opacity: 0;
+    transform: scale(0) rotate(-180deg);
+    transition: all 0.4s ease-in;
+}
+
+.ejemplo-4-1:hover .mascara {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+    transition-delay: 0.2s;
+}
+
+
+
+
+
+
+
+/*Ejemplo 6*/
+.ejemplo-6 img {
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-6 .mascara {
+    background-color: rgba(25, 96, 184, 0.8);
+    opacity: 0;
+    transform: scale(0) rotate(0deg);
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-6 h2 {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-6 p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-6 a.link {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-6:hover .mascara {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+
+.ejemplo-6:hover img {
+    transform: scale(1.1);
+}
+
+.ejemplo-6:hover h2,
+.ejemplo-6:hover p,
+.ejemplo-6:hover a.link {
+    opacity: 1;
+}
+
+/*Ejemplo 7*/
+.ejemplo-7 img {
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-7 .mascara {
+    background-color: rgba(25, 96, 184, 0.8);
+    transform: translate(-300px, 0) rotate(-90deg);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-7 h2 {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-7 p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-7 a.link {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-7:hover .mascara {
+    opacity: 1;
+    transform: translate(0, 0) rotate(0deg);
+}
+
+.ejemplo-7:hover img {
+    transform: scale(1.1);
+}
+
+.ejemplo-7:hover h2,
+.ejemplo-7:hover p,
+.ejemplo-7:hover a.link {
+    opacity: 1;
+}
+
+/*Ejemplo 8*/
+.ejemplo-8 img {
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-8 .mascara {
+    background-color: rgba(25, 96, 184, 0.8);
+    transform: scale(0) translateY(-100px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+
+.ejemplo-8 h2 {
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-8 p {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-8 a.link {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.ejemplo-8:hover .mascara {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.ejemplo-8:hover img {
+    transform: scale(1.1);
+}
+
+.ejemplo-8:hover h2,
+.ejemplo-8:hover p,
+.ejemplo-8:hover a.link {
+    opacity: 1;
+}
+

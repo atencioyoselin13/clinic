@@ -1,0 +1,653 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+body {
+	margin:0px;
+	padding:0px;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	line-height:1.5em; 
+	background-color: #fff;
+}
+
+a, a:link, a:visited { color: #000000; font-weight: normal; }
+a:hover { color:#CC0000; text-decoration:none; }
+
+p { margin: 0px; padding: 0 0 20px 0; }
+img { border: none; }
+
+h2, h3, h4, h5 { font-weight: normal; font-family: Arial, Helvetica, sans-serif; }
+
+h1 { font-size: 28px; color: #fff; margin: 0 0 20px 0; padding: 5px 0; }
+h2 { font-size: 22px; color: #000; margin: 0 0 20px 0; padding: 0 0 10px 0; border-bottom: 1px dashed #999; font-family: Arial, Helvetica, sans-serif; }
+h2 span { font-weight: bold; }
+h3 { font-size: 21px; color: #333; margin: 0 0 15px 0; padding: 0; text-decoration: none; font-weight: normal; }
+h4 { font-size: 18px; color: #000; margin: 0 0 10px 0; padding: 0; }
+h5 {
+	font-size: 14px;
+	height: 27px;
+	width: 116px;
+	color: #000;
+	margin: 0;
+	padding: 3px 10px 0 10px;
+	text-align: center;
+	background: url(images/h5_bg.png) no-repeat top left;
+}
+h6 { font-size: 12px; margin: 0 0 5px 0; padding: 0;}
+
+blockquote { font-style: italic; }
+cite { font-weight: normal; color: #1d68b6; font-size: 14px; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.margin_r15 { margin-right: 15px; }
+.margin_r30 { margin-right: 30px; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.image_wrapper { padding: 8px; border: 1px solid #000; background: #0f1115; }
+.fl_img { float: left; margin: 3px 30px 15px 0; }
+.fr_img { float: right; margin: 3px 0 15px 15px; }
+
+.button a {
+	clear: both;
+	display: block;
+	width: 119px;
+	height: 33px;
+	padding: 3px 0 0 12px;
+	background: url(images/readmore.png) no-repeat;
+		
+	color: #ccc;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button a:hover {
+	color: #fff;
+}
+
+ul { margin: 20px 10px; padding: 0; list-style:none; }
+ul li { padding-left: 30px; padding-bottom: 3px; margin-bottom: 2px; background: url(images/ul_list.png) no-repeat center left; }
+ul li a { font-weight: normal; text-decoration: none; }
+
+.readmore a {
+	clear: both;
+	display: block;
+	float: right;
+	padding: 0px 0 2px 12px;
+	background: url(images/read_more.png) center left no-repeat;
+
+	color: #2670c3;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* header */
+
+
+
+
+
+/* Header */
+#templatemo_header_wrapper {
+    width: 100%;
+    height: 82px;
+    background-color: #0b2c65;
+    position: fixed; /* Hace que el encabezado se quede fijo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Se asegura de que el encabezado esté por encima de otros elementos */
+}
+
+#templatemo_header {
+    width: 910px;
+    height: 52px;
+    padding: 15px;
+    margin: 0 auto;
+    position: relative; /* Relativa al contenedor para el posicionamiento */
+}
+
+
+/*#templatemo_header_wrapper {
+	width: 100%;
+	height: 82px;
+	background-color: #0b2c65;
+}
+
+#templatemo_header {
+	width: 910px;
+	height: 52px;
+	padding: 15px;
+	margin: 0 auto;
+}*/
+
+/* site title */
+
+
+
+
+/* menu */
+/* Menú fijo */
+
+/* Estilo general del menú */
+#templatemo_menu {
+    float: right;
+    height: 37px;
+    margin-top: 12px;
+}
+
+#templatemo_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li {
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Cambiar a inline-block para que se puedan mostrar los submenús */
+    position: relative; /* Posición relativa para los submenús */
+}
+
+#templatemo_menu ul li a {
+    float: left;
+    display: block;
+    height: 28px;
+    width: 90px;
+    margin-left: 10px;
+    padding: 8px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+    background: url(images/menu_hover.png) no-repeat;
+}
+
+/* Estilo para los submenús */
+#templatemo_menu ul li ul {
+    display: none; /* Los submenús están ocultos por defecto */
+    position: absolute; /* Los submenús se posicionan de forma absoluta */
+    top: 37px; /* Para que el submenú esté justo debajo del elemento */
+    left: 0;
+    background-color: #0b2c65; /* Fondo del submenú */
+    width: 100%;
+    padding: 0;
+}
+
+#templatemo_menu ul li:hover ul {
+    display: block; /* Cuando el usuario pasa el mouse sobre el li, el submenú se muestra */
+}
+
+/* Estilo de los elementos dentro del submenú */
+#templatemo_menu ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+#templatemo_menu ul li ul li a {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Efecto hover para los submenús */
+#templatemo_menu ul li ul li a:hover {
+    background-color: #0a2b59; /* Un tono más oscuro para el hover */
+}
+/*
+#templatemo_menu {
+	float: right;
+	height: 37px;
+	margin-top: 12px;
+}
+
+#templatemo_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	height: 28px;
+	width: 90px;
+	margin-left: 10px;
+	padding: 8px 0 0 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;	
+	outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+	background: url(images/menu_hover.png) no-repeat;
+}*/
+
+/* end of menu */
+
+/* end of header */
+
+/* feature */
+
+#templatemo_feature_wrapper {
+    width: 100%;
+    height: 266px;
+    margin-top: 90px; /* Ajusta este valor para mover hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured {
+    display: flex;
+    gap: 10px; /* Espacio entre banners */
+}
+
+.banner1 {
+    
+		width: 980px;
+		height: 266px;
+	
+	
+}
+
+					 
+
+/* end of feature */
+
+#templatemo_content_wrapper {
+	width: 910px;
+	margin: 0 auto;
+	padding: 30px 15px;
+}
+
+#templatemo_content {
+	float: left;
+	width: 560px;
+}
+
+#templatemo_sidebar {
+	float: right;
+	
+	width: 320px;
+	
+}
+
+.col_w265 {
+	width: 265px;
+}
+
+.two_col_image {
+	position: relative;
+	width: 251px;
+	height: 105px;
+	padding: 7px;
+	margin-bottom: 10px;
+	background: url(images/templatemo_ot.png) no-repeat;
+}
+
+.two_col_image span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 253px;
+	height: 119px;
+	background: url(images/templatemo_ot.png) no-repeat;
+}
+
+.newsbox {
+	padding-bottom: 20px;
+	border-bottom: 1px dashed #666;
+	margin-bottom: 20px;
+}
+
+.newsbox .news_image {
+	float: left;
+	position: relative;
+	width: 83px;
+	height: 53px;
+	padding: 3px;
+}
+
+.newsbox .news_image span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 89px;
+	height: 59px;
+	background: url(images/news_image_frame.png) no-repeat;
+}
+
+.newsbox p {
+	float: right;
+	width: 190px;
+	margin: 0;
+	padding: 0;
+}
+
+
+  
+#latest_projects {
+    width: 814px;
+    height: 175px;
+    padding: 20px 30px;
+    background: url(images/latest_projects.png) no-repeat center center;
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+}
+
+#latest_project_text {
+	float: left;
+	width: 180px;
+	padding: 0 20px 0 0;
+	margin-right: 15px;
+	background: url(images/gallery_divider.png) right center no-repeat;
+}
+
+#latest_project_text p {
+	font-size: 11px;
+}
+
+.project_image_box {
+	float: left;
+	width: 150px;
+}
+
+
+
+
+#latest_projects .project_image {
+	position: relative;
+	width: 134px;
+	height: 97px;
+	padding: 8px;
+	margin-bottom: 5px;
+}
+
+#latest_projects h5 {
+	font-size: 12px;
+}
+
+.project_image span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150px;
+	height: 113px;
+	background: url(images/project_image.png) no-repeat;
+}
+
+/* testimonial */
+
+#testimonial_newsletter {
+	width: 260px;
+	height: 246px;
+	padding: 20px 30px;
+	background: url(images/testimonial_newsletter.png) no-repeat;
+}
+
+#testimonial {
+	width: 260px;
+	height: 137px;
+	margin-bottom: 50px;
+}
+
+#testimonial h2 {
+	border-bottom: none;
+	padding: 0;
+	margin-bottom: 10px;
+}
+
+#testimonial p {
+	margin: 0 0 10px 0;
+	padding: 0;
+}
+
+#testimonial p .open {
+	margin-right: 20px;
+}
+
+#testimonial p .close {
+	margin-bottom: -10px;
+	margin-left: 20px;
+}
+
+#newsletter {
+	padding-left: 50px;
+}
+
+#newsletter h2 {
+	border-bottom: none;
+	padding: 0;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+#newsletter_email {
+	height: 13px;
+	width: 110px;
+	color: #fff;
+	font-size: 12px;
+	padding: 2px 5px;
+	font-variant: normal;
+	line-height: normal;
+	border: 1px solid #eaeaea;
+	background: #f5f5f5;
+}
+
+#newsletter_subscribe {
+	margin-bottom: 5px;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	vertical-align: bottom;
+	white-space: pre;
+	outline: none;
+	color:#fff;
+	border: none;
+	background: none;
+}
+/* end of testimonial */
+
+
+ 
+.footer {
+	background-color: #0b2c65;
+	color: #ffffff;
+	width: 100%;
+	height: auto;
+	bottom: 0;
+	left: 0;
+  }
+  
+  .footer .heading {
+	color: #ffffff;
+	max-width: 1010px;
+	width: 90%;
+	text-transform: uppercase;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .footer .content {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 2rem; /* Ajusta esta propiedad para bajar el contenido */
+	margin-bottom: 1rem; /* Ajusta según prefieras el espacio inferior */
+	color: #ffffff;
+	padding-top: 50px; /* Añade un padding superior si quieres más separación */
+  }
+  
+  .footer .content p {
+	margin-bottom: 1rem;
+	line-height: 1.4;
+	color: #ffffff;
+  }
+  
+  .footer .content a {
+	text-decoration: none;
+	color: #ffffff;
+  }
+  
+  .footer .content a:hover {
+	border-bottom: 1px solid #971717;
+  }
+  
+  .footer .content h4 {
+	margin-bottom: 1rem;
+	font-size: 19px;
+	color: #ffffff;
+  }
+  
+  
+  
+  footer hr {
+	margin: 2rem 0;
+	border-color: #ffffff;
+  }
+  
+  @media (max-width: 767px) {
+	.footer .content {
+	  display: flex;
+	  flex-direction: column;
+	  font-size: 14px;
+	}
+  }
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+	.footer .content,
+	.footer {
+	  font-size: 14px;
+	}
+  }
+  
+  @media (orientation: landscape) and (max-height: 500px) {
+	.footer {
+	  position: unset;
+	}
+  }
+  
+
+
+
+
+
+
+
+
+
+.serva{
+    width: 85px;
+    height: 55px;
+}
+
+
+
+
+
+
+
+/* Estilos para el contenedor de las preguntas */
+#question-container {
+    width: 570px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+#question-container h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#question-container .question {
+    margin-bottom: 20px;
+}
+
+#question-container input[type="radio"] {
+    margin-right: 10px;
+}
+#question-container .question button {
+    
+    width: auto;
+    margin-left: auto;
+    margin-right: 0;
+}
+#question-container button {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: right;
+    transition: background-color 0.3s ease;
+}
+
+#question-container button:hover {
+    background-color: #45a049; /* Verde más oscuro */
+}
+
+#question-container .question input[type="radio"]:checked + label {
+    font-weight: bold;
+}
+
+#question-container .question input[type="radio"]:not(:checked) + label {
+    color: #777;
+}
+
+#question-container .question input[type="radio"]:checked + label {
+    color: #333;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    #question-container {
+        width: 90%;
+    }
+
+    #question-container h4 {
+        font-size: 1.1em;
+    }
+
+    #question-container button {
+        padding: 12px 25px;
+    }
+}
+
+
+
+
+
+

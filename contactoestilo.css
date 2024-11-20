@@ -1,0 +1,607 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+body {
+	margin:0px;
+	padding:0px;
+	color: #666;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size:13px;
+	line-height:1.5em; 
+	background-color: #fff;
+	
+}
+
+a, a:link, a:visited { color: #000000; font-weight: normal; }
+a:hover { color:#CC0000; text-decoration:none; }
+
+p { margin: 0px; padding: 0 0 20px 0; }
+img { border: none; }
+
+h2, h3, h4, h5 { font-weight: normal; font-family: Arial, Helvetica, sans-serif; }
+
+h1 { font-size: 28px; color: #fff; margin: 0 0 20px 0; padding: 5px 0; }
+h2 { font-size: 22px; color: #000; margin: 0 0 20px 0; padding: 0 0 10px 0; border-bottom: 1px dashed #999; font-family: Arial, Helvetica, sans-serif; }
+h2 span { font-weight: bold; }
+h3 { font-size: 21px; color: #333; margin: 0 0 15px 0; padding: 0; text-decoration: none; font-weight: normal; }
+h4 { font-size: 18px; color: #000; margin: 0 0 10px 0; padding: 0; }
+h5 {
+	font-size: 14px;
+	height: 27px;
+	width: 116px;
+	color: #000;
+	margin: 0;
+	padding: 3px 10px 0 10px;
+	text-align: center;
+	background: url(images/h5_bg.png) no-repeat top left;
+}
+h6 { font-size: 12px; margin: 0 0 5px 0; padding: 0;}
+
+blockquote { font-style: italic; }
+cite { font-weight: normal; color: #1d68b6; font-size: 14px; }
+
+.cleaner { clear: both; width: 100%; height: 0px; font-size: 0px;  }
+.cleaner_h10 { clear: both; width:100%; height: 10px; }
+.cleaner_h20 { clear: both; width:100%; height: 20px; }
+.cleaner_h30 { clear: both; width:100%; height: 30px; }
+.cleaner_h40 { clear: both; width:100%; height: 40px; }
+.cleaner_h50 { clear: both; width:100%; height: 50px; }
+.cleaner_h60 { clear: both; width:100%; height: 60px; }
+
+.margin_r15 { margin-right: 15px; }
+.margin_r30 { margin-right: 30px; }
+
+.float_l { float: left; }
+.float_r { float: right; }
+
+.image_wrapper { padding: 8px; border: 1px solid #000; background: #0f1115; }
+.fl_img { float: left; margin: 3px 30px 15px 0; }
+.fr_img { float: right; margin: 3px 0 15px 15px; }
+
+.button a {
+	clear: both;
+	display: block;
+	width: 119px;
+	height: 33px;
+	padding: 3px 0 0 12px;
+	background: url(images/readmore.png) no-repeat;
+		
+	color: #ccc;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.button a:hover {
+	color: #fff;
+}
+
+ul { margin: 20px 10px; padding: 0; list-style:none; }
+ul li { padding-left: 30px; padding-bottom: 3px; margin-bottom: 2px; background: url(images/ul_list.png) no-repeat center left; }
+ul li a { font-weight: normal; text-decoration: none; }
+
+.readmore a {
+	clear: both;
+	display: block;
+	float: right;
+	padding: 0px 0 2px 12px;
+	background: url(images/read_more.png) center left no-repeat;
+
+	color: #2670c3;
+	font-weight: normal;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+/* header */
+
+
+
+
+
+/* Header */
+#templatemo_header_wrapper {
+    width: 100%;
+    height: 82px;
+    background-color: #0b2c65;
+    position: fixed; /* Hace que el encabezado se quede fijo */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Se asegura de que el encabezado esté por encima de otros elementos */
+}
+
+#templatemo_header {
+    width: 910px;
+    height: 52px;
+    padding: 15px;
+    margin: 0 auto;
+    position: relative; /* Relativa al contenedor para el posicionamiento */
+}
+
+
+/*#templatemo_header_wrapper {
+	width: 100%;
+	height: 82px;
+	background-color: #0b2c65;
+}
+
+#templatemo_header {
+	width: 910px;
+	height: 52px;
+	padding: 15px;
+	margin: 0 auto;
+}*/
+
+/* site title */
+
+
+
+
+/* menu */
+/* Menú fijo */
+
+/* Estilo general del menú */
+#templatemo_menu {
+    float: right;
+    height: 37px;
+    margin-top: 12px;
+}
+
+#templatemo_menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#templatemo_menu ul li {
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Cambiar a inline-block para que se puedan mostrar los submenús */
+    position: relative; /* Posición relativa para los submenús */
+}
+
+#templatemo_menu ul li a {
+    float: left;
+    display: block;
+    height: 28px;
+    width: 90px;
+    margin-left: 10px;
+    padding: 8px 0 0 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+    background: url(images/menu_hover.png) no-repeat;
+}
+
+/* Estilo para los submenús */
+#templatemo_menu ul li ul {
+    display: none; /* Los submenús están ocultos por defecto */
+    position: absolute; /* Los submenús se posicionan de forma absoluta */
+    top: 37px; /* Para que el submenú esté justo debajo del elemento */
+    left: 0;
+    background-color: #0b2c65; /* Fondo del submenú */
+    width: 100%;
+    padding: 0;
+}
+
+#templatemo_menu ul li:hover ul {
+    display: block; /* Cuando el usuario pasa el mouse sobre el li, el submenú se muestra */
+}
+
+/* Estilo de los elementos dentro del submenú */
+#templatemo_menu ul li ul li {
+    display: block;
+    width: 100%;
+}
+
+#templatemo_menu ul li ul li a {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Efecto hover para los submenús */
+#templatemo_menu ul li ul li a:hover {
+    background-color: #0a2b59; /* Un tono más oscuro para el hover */
+}
+/*
+#templatemo_menu {
+	float: right;
+	height: 37px;
+	margin-top: 12px;
+}
+
+#templatemo_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	height: 28px;
+	width: 90px;
+	margin-left: 10px;
+	padding: 8px 0 0 0;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #fff;	
+	outline: none;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+	background: url(images/menu_hover.png) no-repeat;
+}*/
+
+/* end of menu */
+
+/* end of header */
+
+/* feature */
+
+#templatemo_feature_wrapper {
+    width: 100%;
+    height: 266px;
+    margin-top: 90px; /* Ajusta este valor para mover hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#featured {
+    display: flex;
+    gap: 10px; /* Espacio entre banners */
+}
+
+.banner1 {
+    
+		width: 980px;
+		height: 266px;
+	
+	
+}
+/* end of feature */
+
+ 
+
+.footer {
+  background-color: #0b2c65;
+  color: #ffffff;
+  width: 100%;
+  height: auto;
+  bottom: 0;
+  left: 0;
+}
+
+.footer .heading {
+  color: #ffffff;
+  max-width: 1010px;
+  width: 90%;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.footer .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2rem; /* Ajusta esta propiedad para bajar el contenido */
+  margin-bottom: 1rem; /* Ajusta según prefieras el espacio inferior */
+  color: #ffffff;
+  padding-top: 50px; /* Añade un padding superior si quieres más separación */
+}
+
+.footer .content p {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  color: #ffffff;
+}
+
+.footer .content a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.footer .content a:hover {
+  border-bottom: 1px solid #971717;
+}
+
+.footer .content h4 {
+  margin-bottom: 1rem;
+  font-size: 19px;
+  color: #ffffff;
+}
+
+
+
+footer hr {
+  margin: 2rem 0;
+  border-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .footer .content {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .content,
+  .footer {
+    font-size: 14px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .footer {
+    position: unset;
+  }
+}
+
+
+.banner1{
+    width: 980px;
+	height: 266px;
+}
+
+
+.serva{
+    width: 85px;
+    height: 55px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ubicacion {
+    color: white;
+    text-align: center;
+    margin-top: 40px; /* Ajusta este valor para mover hacia abajo */
+   
+}
+
+#ubicacion .estmapa {
+    padding: 50px 20px;
+}
+
+.mapa {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+}
+
+.img1 {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* Estilos generales de .rows y .contact-info */
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+   
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-info-icon {
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.contact-info-content {
+    margin-left: 15px;
+    text-align: left;
+}
+
+.contact-info-content h4 {
+    color: #0e2b5a;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.contact-info-content p {
+    color: #333;
+    font-size: 1em;
+}
+
+/* Estilos de .contact_form y ajustes del formulario */
+.contact_form {
+    background-color: #f4f4f4;
+    padding: 30px;
+    width: 600px;
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact_form h2 {
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #0e2b5a;
+}
+
+.contact_form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact_form li {
+    margin-bottom: 15px;
+}
+
+.contact_form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.contact_form button.submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #0e2b5a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact_form button.submit:hover {
+    background-color: #09304d;
+}
+
+/* Ajustes de estilo de #latest_projects */
+#latest_projects {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 30px;
+    background: url(images/latest_projects.png) no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 1100px;
+}
+
+#latest_project_text {
+    float: left;
+    width: 120px;
+    padding: 0 20px 0 0;
+    margin-right: 30px;
+    background: url(images/gallery_divider.png) right center no-repeat;
+}
+
+#latest_project_text p {
+    font-size: 12px;
+    color: #333;
+}
+
+.project_image_box {
+    float: left;
+    width: 150px;
+}
+
+#latest_projects .project_image {
+    position: relative;
+    width: 134px;
+    height: 97px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+#latest_projects h5 {
+    font-size: 14px;
+    color: #333;
+}
+
+.project_image span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 113px;
+    background: url(images/project_image.png) no-repeat;
+}
+
+/* Responsividad */
+@media (max-width: 991px) {
+    .rows {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info, .contact_form {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    #latest_projects {
+        padding: 20px;
+    }
+
+    #latest_project_text, .project_image_box {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
